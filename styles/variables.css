@@ -1,4 +1,14 @@
 :root {
+  --main-font: 'IBM Plex mono';
   --bg-image: url("../images/cover-image-dark.png");
   --bg-color: #rgba(0, 0, 40, 1);
+  --main-highlighted-color: rgba(255, 0, 112, 1);
+  --main-font-color: rgba(241, 178, 206, 1);
+  --menu-font-color: rgba(255, 0, 112, 1);
+  --menu-button-hover-color: rgba(255, 0, 112, 0.4);
+  --logo-font-color: rgba(219, 0, 255, 1);
+  --logo-font-shadow-color: rgba(255, 0, 112, 1);
+  --title-highlighted-font-color: rgba(0, 0, 40, 1);
+  --title-font-color: rgba(255, 0, 112, 1);
+  --link-font-shadow-color: rgba(255, 0, 112, 1);
  }

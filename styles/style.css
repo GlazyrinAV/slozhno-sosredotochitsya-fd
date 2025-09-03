@@ -5,3 +5,107 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--main-highlighted-color);
+  border-left: 1px solid var(--main-highlighted-color);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--main-highlighted-color);
+  border-right: 1px solid var(--main-highlighted-color);
+}
+
+.header__decorative-sign {
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  color: var(--menu-font-color);
+  line-height: 139%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__decorative-sign::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--main-highlighted-color);
+  background: var(--main-highlighted-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 0 25px;
+  height: 26px;
+  text-transform: lowercase;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--main-highlighted-color);
+  line-height: 100%;
+  text-align: center;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--menu-button-hover-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-highlighted-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--main-highlighted-color);
+}
+
+.header__logo {
+font-weight: 700;
+font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+line-height: 82.5%;
+color: var(--logo-font-color);
+text-shadow: 4px 4px 0px var(--logo-font-shadow-color);
+}
+
+.header__main-title {
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 130%;
+color: var(--title-highlighted-font-color);
+background: var(--main-highlighted-color);
+}
