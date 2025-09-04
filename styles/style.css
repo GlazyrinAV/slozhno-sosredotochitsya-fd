@@ -1,23 +1,23 @@
 .page {
+  padding: 0 10px;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 0 10px;
 }
 
 .title-decor {
-  background: var(--accent-color);
   color: var(--title-highlighted-font-color);
+  background: var(--accent-color);
 }
 
 .sub-title {
+  margin-bottom: 19px;
+  color: var(--menu-font-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--menu-font-color);
-  margin-bottom: 20px;
 }
 
 .card {
@@ -32,17 +32,17 @@ li:last-of-type .card {
 
 .card-title {
   margin-bottom: 10px;
+  color: var(--title-highlighted-font-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--title-highlighted-font-color);
 }
 
 .card-description {
+  color: var(--main-font-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
-  color: var(--main-font-color);
 }
 
 .card__link {
@@ -64,9 +64,9 @@ li:last-of-type .card {
 }
 
 .chapter {
-  min-height: min-content;
   display: grid;
   grid-template-columns: 1fr;
+  min-height: min-content;
   padding: 40px 0 10px;
 }
 
@@ -75,11 +75,11 @@ li:last-of-type .card {
 }
 
 .header {
-  height: calc(100vh - 20px);
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 29.6% 1fr;
+  height: calc(100vh - 20px);
   margin: 10px 0;
 }
 
@@ -107,9 +107,11 @@ li:last-of-type .card {
 
 .header__decorative-sign {
   position: absolute;
-  top: 0px;
-  right: 9px;
+  top: 0;
+  right: 10px;
   color: var(--menu-font-color);
+  font-weight: 400;
+  font-size: 18px;
   line-height: 139%;
   text-align: center;
   text-transform: uppercase;
@@ -133,22 +135,24 @@ li:last-of-type .card {
 }
 
 .header__theme-menu-list {
-  justify-self: right;
   display: flex;
   flex-direction: column;
+  justify-self: right;
   align-items: end;
   gap: 10px;
 }
 
 .header__theme-menu-button {
-  padding: 0 13px;
   height: 26px;
-  text-transform: lowercase;
-  background: transparent;
   border: 1px solid transparent;
+  padding: 0 13px;
   color: var(--accent-color);
+  font-weight: 400;
+  font-size: 18px;
   line-height: 100%;
   text-align: center;
+  text-transform: lowercase;
+  background: transparent;
 }
 
 .header__theme-menu-button:hover {
@@ -168,28 +172,28 @@ li:last-of-type .card {
 }
 
 .slogan {
+  color: var(--logo-font-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  color: var(--logo-font-color);
   text-shadow: 4px 4px 0px var(--logo-font-shadow-color);
 }
 
 .header__main-title {
+  align-self: center;
+  color: var(--title-highlighted-font-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--title-highlighted-font-color);
-  align-self: center;
   white-space: pre-line;
 }
 
 .about-how__title {
   display: inline;
+  color: var(--title-highlighted-font-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
-  color: var(--title-highlighted-font-color);
 }
 
 .sub-chapter {
@@ -201,7 +205,11 @@ li:last-of-type .card {
 }
 
 .sub-chapter__title {
-  margin: 0 0 20px 0;
+  margin: 0 0 21px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--title-highlighted-font-color);
 }
 
 .about-how-in-pictures .sub-chapter__title {
@@ -221,12 +229,12 @@ li:last-of-type .card {
 }
 
 .footer {
-  padding: 10px 0;
-  display: flex;
-  height: 100vh;
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  padding: 10px 0;
 }
 
 .footer::before {
