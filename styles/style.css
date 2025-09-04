@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 0 10px;
 }
 
 .title-decor {
@@ -12,29 +13,36 @@
 }
 
 .sub-title {
-font-weight: 700;
-font-size: 18px;
-line-height: 130%;
-color: var(--menu-font-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--menu-font-color);
+  margin-bottom: 20px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+li:last-of-type .card {
+  margin-bottom: 0;
 }
 
 .card-title {
-font-weight: 700;
-font-size: 18px;
-line-height: 130%;
-color: var(--title-highlighted-font-color);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--title-highlighted-font-color);
 }
 
 .card-description {
-font-weight: 400;
-font-size: 18px;
-line-height: 130%;
-color: var(--main-font-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--main-font-color);
 }
 
 .card__link {
@@ -55,20 +63,31 @@ color: var(--main-font-color);
   border: 1px solid var(--main-font-color);
 }
 
-.header {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.chapter {
+  min-height: min-content;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  padding: 40px 0 10px;
+}
+
+.chapter:first-of-type {
+  padding: 40px 0 10px;
+}
+
+.header {
+  height: calc(100vh - 20px);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 29.6% 1fr;
+  margin: 10px 0;
 }
 
 .header::before {
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 0;
+  left: 0;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
@@ -78,8 +97,8 @@ color: var(--main-font-color);
 .header::after {
   content: "";
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color);
@@ -88,8 +107,8 @@ color: var(--main-font-color);
 
 .header__decorative-sign {
   position: absolute;
-  top: 10px;
-  right: 19px;
+  top: 0px;
+  right: 9px;
   color: var(--menu-font-color);
   line-height: 139%;
   text-align: center;
@@ -107,7 +126,14 @@ color: var(--main-font-color);
   background: var(--accent-color);
 }
 
+.header__theme-menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
 .header__theme-menu-list {
+  justify-self: right;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -115,7 +141,7 @@ color: var(--main-font-color);
 }
 
 .header__theme-menu-button {
-  padding: 0 25px;
+  padding: 0 13px;
   height: 26px;
   text-transform: lowercase;
   background: transparent;
@@ -141,7 +167,7 @@ color: var(--main-font-color);
   border: 1px solid var(--accent-color);
 }
 
-.logo {
+.slogan {
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
@@ -150,28 +176,64 @@ color: var(--main-font-color);
 }
 
 .header__main-title {
-  font-family: "IBM Plex Mono";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
+  color: var(--title-highlighted-font-color);
+  align-self: center;
+  white-space: pre-line;
 }
 
-.about-why {
+.about-how__title {
+  display: inline;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--title-highlighted-font-color);
+}
+
+.sub-chapter {
+  margin-bottom: 50px;
+}
+
+.sub-chapter:last-of-type {
+  margin-bottom: 30px;
+}
+
+.sub-chapter__title {
+  margin: 0 0 20px 0;
+}
+
+.about-how-in-pictures .sub-chapter__title {
+  margin: 0 0 10px 0;
+}
+
+.about-how-in-pictures__list {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 10px;
+}
+
+.about-how-in-pictures-picture {
+  display: block;
+  inline-size: 100%;
 }
 
 .footer {
+  padding: 10px 0;
+  display: flex;
   height: 100vh;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer::before {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 0;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
@@ -182,7 +244,7 @@ color: var(--main-font-color);
   content: "";
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 0;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color);
