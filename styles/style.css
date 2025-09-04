@@ -90,8 +90,8 @@ li:last-of-type .card {
   left: 0;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--frame-color);
+  border-left: 1px solid var(--frame-color);
 }
 
 .header::after {
@@ -101,8 +101,8 @@ li:last-of-type .card {
   right: 0;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--frame-color);
+  border-right: 1px solid var(--frame-color);
 }
 
 .header__decorative-sign {
@@ -146,7 +146,7 @@ li:last-of-type .card {
   height: 26px;
   border: 1px solid transparent;
   padding: 0 13px;
-  color: var(--accent-color);
+  color: var(--menu-font-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -164,11 +164,11 @@ li:last-of-type .card {
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--menu-font-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-font-color);
 }
 
 .slogan {
@@ -206,10 +206,10 @@ li:last-of-type .card {
 
 .sub-chapter__title {
   margin: 0 0 21px 0;
+  color: var(--title-highlighted-font-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color: var(--title-highlighted-font-color);
 }
 
 .about-how-in-pictures .sub-chapter__title {
@@ -244,8 +244,8 @@ li:last-of-type .card {
   left: 0;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--frame-color);
+  border-left: 1px solid var(--frame-color);
 }
 
 .footer::after {
@@ -255,6 +255,6 @@ li:last-of-type .card {
   right: 0;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--frame-color);
+  border-right: 1px solid var(--frame-color);
 }
