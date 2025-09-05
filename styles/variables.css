@@ -12,6 +12,7 @@
   --title-highlighted-font-color: rgba(0, 0, 40, 1);
   --title-font-color: rgba(255, 0, 112, 1);
   --link-font-shadow-color: rgba(255, 0, 112, 1);
+  --min-screen-height: 668px;
   --main-pading: 10px;
   --header-decorative-sign-visible: inline-block;
   --main-title-height: 12rem;

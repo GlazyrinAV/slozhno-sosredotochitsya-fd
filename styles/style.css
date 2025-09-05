@@ -75,6 +75,7 @@ li:last-of-type .card {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr var(--main-title-height, 12rem) 1fr;
   height: 100vh;
+  min-height: var(--min-screen-height, 668px);
   padding: var(--main-pading, 10px);
 }
 
@@ -103,7 +104,7 @@ li:last-of-type .card {
 .header__decorative-sign {
   position: absolute;
   top: var(--main-pading, 10px);
-  right: calc(var(--main-pading, 10px) + 10px) ;
+  right: calc(var(--main-pading, 10px) + 10px);
   display: var(--header-decorative-sign-visible, inline-block);
   color: var(--menu-font-color, rgba(255, 0, 112, 1));
   font-weight: 400;
@@ -237,6 +238,7 @@ li:last-of-type .card {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: var(--min-screen-height, 668px);
   padding: var(--main-pading, 10px);
 }
 
@@ -264,6 +266,7 @@ li:last-of-type .card {
 
 @media (width >= 768px) {
   :root {
+    --min-screen-height: 1024px;
     --main-pading: 20px;
     --main-title-height: 6.1875rem;
     --picture-gallery-gap: 20px;
@@ -338,6 +341,7 @@ li:last-of-type .card {
 
 @media (width >= 1024px) {
   :root {
+    --min-screen-height: 768px;
     --main-title-height: 8.125rem;
   }
 
