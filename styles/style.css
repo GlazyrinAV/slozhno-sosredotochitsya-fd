@@ -363,10 +363,10 @@ li:last-of-type .card {
   }
 
   .about-what__list {
-    grid-row: 2;
-    grid-column: span 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+    grid-row: 2;
     gap: 20px;
   }
 }
