@@ -1,5 +1,5 @@
 .page {
-  background-image: var(--bg-image), url("../images/cover-image-dark.png");
+  background-image: var(--bg-image, url("../images/cover-image-dark.png"));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
