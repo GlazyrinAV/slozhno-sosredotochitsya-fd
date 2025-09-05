@@ -1,5 +1,4 @@
 .page {
-  padding: 0 var(--main-pading);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -80,14 +79,14 @@ li:last-of-type .card {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 12rem 1fr;
   height: 100vh;
-  padding: var(--main-pading) 0;
+  padding: var(--main-pading) var(--main-pading);
 }
 
 .header::before {
   content: "";
   position: absolute;
   bottom: var(--main-pading);
-  left: 0;
+  left: var(--main-pading);
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--frame-color);
@@ -98,7 +97,7 @@ li:last-of-type .card {
   content: "";
   position: absolute;
   top: var(--main-pading);
-  right: 0;
+  right: var(--main-pading);
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--frame-color);
@@ -108,7 +107,7 @@ li:last-of-type .card {
 .header__decorative-sign {
   position: absolute;
   top: var(--main-pading);
-  right: 10px;
+  right: calc(var(--main-pading) + 10px) ;
   display: var(--header-decorative-sign-visible);
   color: var(--menu-font-color);
   font-weight: 400;
@@ -189,6 +188,10 @@ li:last-of-type .card {
   line-height: 130%;
 }
 
+.content {
+  padding: 0 var(--main-pading);
+}
+
 .about-how__title {
   display: inline;
   color: var(--title-highlighted-font-color);
@@ -238,6 +241,7 @@ li:last-of-type .card {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0 var(--main-pading);
   padding: var(--main-pading) 0;
 }
 
@@ -245,7 +249,7 @@ li:last-of-type .card {
   content: "";
   position: absolute;
   bottom: var(--main-pading);
-  left: 0;
+  left: var(--main-pading);
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--frame-color);
@@ -256,7 +260,7 @@ li:last-of-type .card {
   content: "";
   position: absolute;
   top: var(--main-pading);
-  right: 0;
+  right: var(--main-pading);
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--frame-color);
