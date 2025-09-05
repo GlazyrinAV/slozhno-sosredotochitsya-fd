@@ -106,10 +106,10 @@ li:last-of-type .card {
 }
 
 .header__decorative-sign {
-  display: var(--header-decorative-sign-visible);
   position: absolute;
   top: 0;
   right: 10px;
+  display: var(--header-decorative-sign-visible);
   color: var(--menu-font-color);
   font-weight: 400;
   font-size: 18px;
@@ -259,4 +259,42 @@ li:last-of-type .card {
   height: 25px;
   border-top: 1px solid var(--frame-color);
   border-right: 1px solid var(--frame-color);
+}
+
+@media (width >= 768px) {
+  .page {
+    padding: 0 20px;
+  }
+
+  .header {
+    grid-template-rows: 1fr 10.06% 1fr;
+    height: calc(100vh - 40px);
+    margin: 20px 0;
+  }
+
+  .slogan {
+    margin-left: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__main-title {
+    max-width: 50%;
+    justify-self: right;
+  }
+}
+
+
+
+
+
+
+@media (width >= 1024px) {
+.header__theme-menu {
+    justify-content: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    align-self: self-start;
+  }
 }
