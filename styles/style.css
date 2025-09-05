@@ -78,7 +78,7 @@ li:last-of-type .card {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 29.6% 1fr;
+  grid-template-rows: 1fr 12rem 1fr;
   height: calc(100vh - 20px);
   margin: 10px 0;
 }
@@ -187,7 +187,6 @@ li:last-of-type .card {
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  white-space: pre-line;
 }
 
 .about-how__title {
@@ -226,11 +225,11 @@ li:last-of-type .card {
 }
 
 .about-how-in-pictures-picture {
-    display: block;
-    inline-size: 100%;
-    block-size: 100%;
-    max-block-size: 100%;
-    object-fit: cover;
+  display: block;
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+  max-block-size: 100%;
 }
 
 .footer {
@@ -270,7 +269,7 @@ li:last-of-type .card {
   }
 
   .header {
-    grid-template-rows: 1fr 10.06% 1fr;
+    grid-template-rows: 1fr 6.1875rem 1fr;
     height: calc(100vh - 40px);
     margin: 20px 0;
   }
@@ -322,8 +321,8 @@ li:last-of-type .card {
   }
 
   .about-how-in-pictures__list-item:nth-child(1) {
-    grid-row: 1;
     grid-column: 1 / span 2;
+    grid-row: 1;
   }
 
   .about-how-in-pictures__list-item:nth-child(2) {
@@ -347,6 +346,14 @@ li:last-of-type .card {
 }
 
 @media (width >= 1024px) {
+  .chapter {
+    grid-template-columns: calc((100% - 40px) / 3) 1fr;
+  }
+
+  .header {
+    grid-template-rows: 1fr 8.125rem 1fr;
+  }
+
   .header__theme-menu {
     justify-content: center;
   }
@@ -354,5 +361,18 @@ li:last-of-type .card {
   .header__theme-menu-list {
     flex-direction: row;
     align-self: self-start;
+  }
+
+  .chapter.about-what {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-what__list {
+    grid-row: 2;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }
