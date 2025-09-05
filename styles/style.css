@@ -278,18 +278,23 @@ li:last-of-type .card {
   }
 
   .header__main-title {
-    max-width: 50%;
     justify-self: right;
+    max-width: 50%;
+  }
+
+  .chapter:first-of-type {
+    padding: 60px 0 10px;
+  }
+
+  .about-why {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
   }
 }
 
-
-
-
-
-
 @media (width >= 1024px) {
-.header__theme-menu {
+  .header__theme-menu {
     justify-content: center;
   }
 
