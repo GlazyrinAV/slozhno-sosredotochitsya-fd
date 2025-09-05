@@ -106,6 +106,7 @@ li:last-of-type .card {
 }
 
 .header__decorative-sign {
+  display: var(--header-decorative-sign-visible);
   position: absolute;
   top: 0;
   right: 10px;
@@ -119,7 +120,7 @@ li:last-of-type .card {
 
 .header__decorative-sign::after {
   content: "";
-  display: inline-block;
+  display: var(--header-decorative-sign-visible);
   width: 9px;
   height: 9px;
   margin-left: 10px;
@@ -169,6 +170,7 @@ li:last-of-type .card {
 
 .header__theme-menu-button_active {
   border: 1px solid var(--menu-font-color);
+  pointer-events: none;
 }
 
 .slogan {

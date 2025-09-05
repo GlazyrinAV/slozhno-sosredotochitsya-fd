@@ -10,6 +10,7 @@
   --logo-font-shadow-color: rgba(255, 141, 203, 1);
   --title-highlighted-font-color: rgba(53, 52, 48, 1);
   --link-font-shadow-color: rgba(255, 141, 203, 1);
+  --header-decorative-sign-visible: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,5 +26,6 @@
     --logo-font-shadow-color: rgba(255, 141, 203, 1);
     --title-highlighted-font-color: rgba(53, 52, 48, 1);
     --link-font-shadow-color: rgba(255, 141, 203, 1);
+    --header-decorative-sign-visible: none;
   }
 }
