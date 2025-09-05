@@ -79,7 +79,7 @@ li:last-of-type .card {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 12rem 1fr;
   height: 100vh;
-  padding: var(--main-pading) var(--main-pading);
+  padding: var(--main-pading);
 }
 
 .header::before {
@@ -241,8 +241,7 @@ li:last-of-type .card {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 0 var(--main-pading);
-  padding: var(--main-pading) 0;
+  padding: var(--main-pading);
 }
 
 .footer::before {
