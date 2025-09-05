@@ -6,6 +6,7 @@
 
 body {
   margin: 0 auto;
+  padding: 0;
   min-inline-size: 375px;
   max-inline-size: 1440px;
   font-family: var(--main-font, 'IBM Plex mono'), sans-serif;
