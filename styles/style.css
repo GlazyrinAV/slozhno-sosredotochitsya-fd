@@ -52,6 +52,10 @@
   margin-bottom: 20px;
 }
 
+.card-description + .card-description {
+  margin-top: var(--main-pading);
+}
+
 li:last-of-type .card {
   margin-bottom: 0;
 }
