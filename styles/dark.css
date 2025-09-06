@@ -1,6 +1,6 @@
 :root.theme-dark {
   --bg-image: url("../images/cover-image-dark.png");
-  --bg-color: #rgba(0, 0, 40, 1);
+  --bg-color: #000028;
   --accent-color: rgba(255, 0, 112, 1);
   --frame-color: rgba(255, 0, 112, 1);
   --main-font-color: rgba(241, 178, 206, 1);

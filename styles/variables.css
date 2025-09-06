@@ -1,7 +1,7 @@
 :root {
   --main-font: 'IBM Plex mono';
   --bg-image: url("../images/cover-image-dark.png");
-  --bg-color: #rgba(0, 0, 40, 1);
+  --bg-color: #000028;
   --accent-color: rgba(255, 0, 112, 1);
   --frame-color: rgba(255, 0, 112, 1);
   --main-font-color: rgba(241, 178, 206, 1);
@@ -15,6 +15,5 @@
   --min-screen-height: 668px;
   --main-pading: 10px;
   --header-decorative-sign-visible: inline-block;
-  --main-title-height: 12rem;
   --picture-gallery-gap: 10px;
  }
