@@ -1,6 +1,6 @@
 .page {
   background-color: var(--bg-color);
-  background-image: var(--bg-image, url("../images/cover-image-dark.png"));
+  background-image: var(--bg-image, url(./images/cover-image-dark.png));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,11 +8,11 @@
 }
 
 .decorated-zone {
-  color: var(--frame-color, rgba(255, 0, 112, 1));
+  color: var(--frame-color, rgb(255 0 112 / 1));
 }
 
 .decorated-zone::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: var(--main-pading, 10px);
   left: var(--main-pading, 10px);
@@ -23,7 +23,7 @@
 }
 
 .decorated-zone::after {
-  content: "";
+  content: '';
   position: absolute;
   top: var(--main-pading, 10px);
   right: var(--main-pading, 10px);
@@ -34,13 +34,13 @@
 }
 
 .title-decor {
-  color: var(--title-highlighted-font-color, rgba(0, 0, 40, 1));
-  background: var(--accent-color, rgba(255, 0, 112, 1));
+  color: var(--title-highlighted-font-color, rgb(0 0 40 / 1));
+  background: var(--accent-color, rgb(255 0 112 / 1));
 }
 
 .sub-title {
   margin-bottom: 19px;
-  color: var(--menu-font-color, rgba(255, 0, 112, 1));
+  color: var(--menu-font-color, rgb(255 0 112 / 1));
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -52,37 +52,37 @@
   margin-bottom: 20px;
 }
 
-.card-description + .card-description {
-  margin-top: var(--main-pading);
-}
-
 li:last-of-type .card {
   margin-bottom: 0;
 }
 
 .card-title {
   margin-bottom: 10px;
-  color: var(--title-highlighted-font-color, rgba(0, 0, 40, 1));
+  color: var(--title-highlighted-font-color, rgb(0 0 40 / 1));
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
 }
 
 .card-description {
-  color: var(--main-font-color, rgba(241, 178, 206, 1));
+  color: var(--main-font-color, rgb(241 178 206 / 1));
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
 }
 
+.card-description + .card-description {
+  margin-top: var(--main-pading);
+}
+
 .card__link {
   border: 1px solid transparent;
   text-decoration: none;
-  text-shadow: 1px 1px var(--logo-font-shadow-color, rgba(255, 0, 112, 1));
+  text-shadow: 1px 1px var(--logo-font-shadow-color, rgb(255 0 112 / 1));
 }
 
 .card__link:hover {
-  border-bottom: 1px solid var(--main-font-color, rgba(241, 178, 206, 1));
+  border-bottom: 1px solid var(--main-font-color, rgb(241 178 206 / 1));
 }
 
 .card__link:focus {
@@ -90,7 +90,7 @@ li:last-of-type .card {
 }
 
 .card__link:focus-visible {
-  border: 1px solid var(--main-font-color, rgba(241, 178, 206, 1));
+  border: 1px solid var(--main-font-color, rgb(241 178 206 / 1));
 }
 
 .chapter {
@@ -115,7 +115,7 @@ li:last-of-type .card {
   top: var(--main-pading, 10px);
   right: calc(var(--main-pading, 10px) + 10px);
   display: var(--header-decorative-sign-visible, inline-block);
-  color: var(--menu-font-color, rgba(255, 0, 112, 1));
+  color: var(--menu-font-color, rgb(255 0 112 / 1));
   font-weight: 400;
   font-size: 18px;
   line-height: 139%;
@@ -124,14 +124,14 @@ li:last-of-type .card {
 }
 
 .header__decorative-sign::after {
-  content: "";
+  content: '';
   display: var(--header-decorative-sign-visible, inline-block);
   width: 9px;
   height: 9px;
   margin-left: 10px;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px currentColor;
-  background: var(--accent-color, rgba(255, 0, 112, 1));
+  box-shadow: 0 0 4px 2px currentColor;
+  background: var(--accent-color, rgb(255 0 112 / 1));
 }
 
 .header__theme-menu {
@@ -152,7 +152,7 @@ li:last-of-type .card {
   height: 26px;
   border: 1px solid transparent;
   padding: 0 13px;
-  color: var(--menu-font-color, rgba(255, 0, 112, 1));
+  color: var(--menu-font-color, rgb(255 0 112 / 1));
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -162,7 +162,7 @@ li:last-of-type .card {
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--menu-button-hover-color, rgba(255, 0, 112, 0.4));
+  border: 1px solid var(--menu-button-hover-color, rgb(255 0 112 / 0.4));
 }
 
 .header__theme-menu-button:focus {
@@ -179,16 +179,16 @@ li:last-of-type .card {
 }
 
 .slogan {
-  color: var(--logo-font-color, rgba(219, 0, 255, 1));
+  color: var(--logo-font-color, rgb(219 0 255 / 1));
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--logo-font-shadow-color, rgba(255, 0, 112, 1));
+  text-shadow: 4px 4px 0 var(--logo-font-shadow-color, rgb(255 0 112 / 1));
 }
 
 .header__main-title {
   align-self: center;
-  color: var(--title-highlighted-font-color, rgba(0, 0, 40, 1));
+  color: var(--title-highlighted-font-color, rgb(0 0 40 / 1));
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -200,7 +200,7 @@ li:last-of-type .card {
 
 .about-how__title {
   display: inline;
-  color: var(--title-highlighted-font-color, rgba(0, 0, 40, 1));
+  color: var(--title-highlighted-font-color, rgb(0 0 40 / 1));
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
@@ -215,8 +215,8 @@ li:last-of-type .card {
 }
 
 .sub-chapter__title {
-  margin: 0 0 21px 0;
-  color: var(--title-highlighted-font-color, rgba(0, 0, 40, 1));
+  margin: 0 0 21px;
+  color: var(--title-highlighted-font-color, rgb(0 0 40 / 1));
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -252,6 +252,7 @@ li:last-of-type .card {
 }
 
 @media (width >= 768px) {
+
   :root {
     --min-screen-height: 1024px;
     --main-pading: 20px;
@@ -326,6 +327,7 @@ li:last-of-type .card {
 }
 
 @media (width >= 1024px) {
+
   :root {
     --min-screen-height: 768px;
   }
