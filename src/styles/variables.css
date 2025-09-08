@@ -17,3 +17,19 @@
   --header-decorative-sign-visible: inline-block;
   --picture-gallery-gap: 10px;
 }
+
+@media (width >= 768px) {
+
+  :root {
+    --min-screen-height: 1024px;
+    --main-pading: 20px;
+    --picture-gallery-gap: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+
+  :root {
+    --min-screen-height: 768px;
+  }
+}

@@ -253,12 +253,6 @@ li:last-of-type .card {
 
 @media (width >= 768px) {
 
-  :root {
-    --min-screen-height: 1024px;
-    --main-pading: 20px;
-    --picture-gallery-gap: 20px;
-  }
-
   .slogan {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -327,10 +321,6 @@ li:last-of-type .card {
 }
 
 @media (width >= 1024px) {
-
-  :root {
-    --min-screen-height: 768px;
-  }
 
   .chapter {
     grid-template-columns: calc((100% - 40px) / 3) 1fr;
